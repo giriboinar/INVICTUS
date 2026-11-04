@@ -1,0 +1,22 @@
+name: CI
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate story data
+        run: python3 -m json.tool story.json > /dev/null && python3 -m json.tool characters.json > /dev/null
+      - name: Check site files
+        run: test -f index.html && test -f style.css && test -f app.js && test -f story.json && test -f characters.json && test -f squads.json
+      - name: Check YAML files
+        run: python3 -c "import yaml, glob; [yaml.safe_load(open(f)) for f in glob.glob('**/*.yml', recursive=True) + glob.glob('**/*.yaml', recursive=True)]"
+      - name: Build Docker image
+        run: docker build -t invictus:latest .
+      - name: Scan Docker image with Trivy
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          image-ref: invictus:latest
+          exit-code: '0'
+      - name: Check Docker Compose config
+        run: docker compose config -q
