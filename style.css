@@ -1,0 +1,22 @@
+body { margin: 0; font-family: system-ui, sans-serif; background: #0d0d1a; color: #f2f2f2; }
+header { text-align: center; padding: 2rem 1rem; background: linear-gradient(180deg, #1a1a3a, #0d0d1a); }
+header h1 { font-size: 3rem; letter-spacing: 0.35rem; margin: 0; color: #ffd700; }
+header p { color: #cccccc; }
+.lang button { margin: 0 0.25rem; padding: 0.5rem 1rem; border: 1px solid #ffd700; background: transparent; color: #ffd700; cursor: pointer; border-radius: 4px; }
+.lang button.active { background: #ffd700; color: #111111; }
+main { max-width: 900px; margin: 0 auto; padding: 1rem; }
+h2 { color: #ffd700; border-bottom: 1px solid #333366; padding-bottom: 0.25rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.card { background: #1a1a2e; border: 1px solid #333366; border-radius: 8px; padding: 1rem; }
+.card img { width: 100%; border-radius: 6px; }
+.card h3 { margin: 0.5rem 0 0.25rem 0; }
+.card .role { color: #ffd700; font-size: 0.9rem; }
+.placeholder { background: #26264d; border: 1px dashed #6666aa; border-radius: 6px; padding: 3rem 1rem; text-align: center; color: #aaaaee; }
+.step { background: #1a1a2e; border: 1px solid #333366; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+.step h3 { margin-top: 0; color: #ffffff; }
+.step img { width: 100%; border-radius: 6px; margin-top: 0.5rem; }
+.step audio { width: 100%; margin-top: 0.5rem; }
+.suspense { border: 1px solid #ffd700; border-radius: 8px; padding: 1rem; margin-bottom: 1rem; }
+.suspense li { margin-bottom: 0.5rem; }
+.note { color: #cccccc; }
+footer { text-align: center; color: #888888; padding: 2rem 1rem; }
