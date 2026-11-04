@@ -30,11 +30,11 @@ Full story in English and Telugu: `story.json` (shown on the site).
 ## Characters
 
 - Sung Jin-Woo — hero, squad leader (portrait ready, from his photo)
-- Captain America — soldier 2 (portrait: choice pending)
-- Hulk — soldier 3 (portrait: choice pending)
+- Captain America — soldier 2, caption America (story scene: squad gathering, step-05)
+- Hulk — soldier 3 (story scene: mantra trap, step-07)
 - Walter White — soldier 4 (portrait ready)
 - Rolex (Surya) — soldier 5 (portrait ready, Surya as Rolex — realistic, well highlighted)
-- Thanos, Basupathi, Homelander — villains (Basupathi realistic Arundhati-style portrait ready, well highlighted, Homelander ready, Thanos single choice pending; villain squad picture ready)
+- Thanos, Basupathi, Homelander — villains (Thanos story scene: his order, step-03; Basupathi realistic Arundhati-style portrait ready, well highlighted; Homelander ready; villain squad picture ready)
 
 ## Project layout
 
