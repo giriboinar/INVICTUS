@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: invictus
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: invictus
+  template:
+    metadata:
+      labels:
+        app: invictus
+    spec:
+      containers:
+        - name: invictus
+          image: nginx:1.27-alpine
+          ports:
+            - containerPort: 80
