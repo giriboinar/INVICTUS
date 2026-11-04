@@ -1,0 +1,10 @@
+- hosts: web
+  tasks:
+    - name: Copy site files
+      copy:
+        src: ../
+        dest: /usr/share/nginx/html/
+    - name: Restart nginx
+      service:
+        name: nginx
+        state: restarted
